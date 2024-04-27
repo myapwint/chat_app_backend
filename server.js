@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const server = require('http').createServer(app);
+const server = require('https').createServer(app);
 const io = socketIO(server);
 shared.io = io;
 
