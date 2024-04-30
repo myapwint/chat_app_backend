@@ -2,7 +2,9 @@ require('dotenv').config()
 const express = require('express');
 const cors = require('cors');
 const mongoDB = require('./src/databases/mongodb/index');
-const socketIO = require('socket.io');
+const socketIO = require('socket.io',{
+    transports: ['websocket']
+});
 const shared = require('./src/shared');
 const MessageController = require('./src/controllers/MessageController');
 
