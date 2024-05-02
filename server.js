@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const server = require('https').createServer(app);
+const server = require('http').createServer(app);
 const io = socketIO(server);
 shared.io = io;
 
@@ -44,7 +44,7 @@ io.on('connection', socket => {
 
 app.use('/', require('./src/routes'));
 
-server.listen('8081', () => {
-    console.log("Listening on port 8081");
+server.listen('8080', () => {
+    console.log("Listening on port 8080");
     mongoDB.connect();
 });

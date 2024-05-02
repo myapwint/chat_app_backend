@@ -2,8 +2,8 @@ const UserRepository = require('../repositories/UserRepository');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const jwtConfig = require('../config/jwt');
-const hash = require('../utils/hash');
-
+// const hash = require('../utils/hash');
+const hash = require('../utils/hash2');
 function generateJwtToken(user){
     const { _id } = user;
     return jwt.sign({
@@ -88,7 +88,7 @@ class UserController {
                 let user = await UserRepository.getUserByName(myId, name);
                 const lowerUserId = myId < user._id ? myId : user._id;
                 const higherUserId = myId > user._id ? myId : user._id;
-                user.chatId = hash(lowerUserId, higherUserId);
+                user.chatId = hash(lowerUserId, higherUserId).hash;
                 return res.json({
                     user
                 })
@@ -97,7 +97,7 @@ class UserController {
             users = users.map((user) => {
                 const lowerUserId = myId < user._id ? myId : user._id;
                 const higherUserId = myId > user._id ? myId : user._id;
-                user.chatId = hash(lowerUserId, higherUserId);
+                user.chatId = hash(lowerUserId, higherUserId).hash;
                 return user;
             });
             return res.json({

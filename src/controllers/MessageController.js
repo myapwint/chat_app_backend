@@ -1,4 +1,5 @@
-const Hash = require('../utils/hash');
+// const hash = require('../utils/hash');
+const hash = require('../utils/hash2');
 const MessageRepository = require('../repositories/MessageRepository');
 const PushNotification = require('./PushNotificationController');
 const shared = require('../shared/index');
@@ -19,7 +20,7 @@ class MessageController {
             const lowerId = from < to ? from : to;
             const higherId = from > to ? from : to;
 
-            const chatId = Hash(lowerId, higherId);
+            const chatId = hash(lowerId, higherId).hash;
 
             const sentMessage = await MessageRepository.create({
                 chatId,
