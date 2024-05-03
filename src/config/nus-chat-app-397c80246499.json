@@ -1,13 +1,1 @@
-{
-  // "type": "service_account",
-  // "project_id": "nus-chat-app",
-  // "private_key_id": "397c80246499c2af4456d7bcea050565b8a99cfd",
-  // "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDVxIOo6abTWKcp\nfDChzBvSPJBANGZtgaQYoRmjQqL8K/o2okvdhL5gnqlxEp1OUZByKZwmyS7GO83A\nGL2PRW0KUzm2dCCMhjGmaToQW2NiK2fwBsFtrBCRbAeQM2lNA9Ek7bO2RajVrBJ+\nwGIUSKSkWlQtXV+UF52wh0JjIcoCHYdPSiA6DzJXeS0VFnU8KnA/1gwVJtN0+HPC\nz8W/QcKP6wZuvv4myh0q89S5BlOiP8ZS+kdG9+dXf/4eEHJLCC/afqO7Zs3m5T5N\nRoZ7E2bq1PBkI6INO9I9YwJ5K0TipBuMeqkxvsCe1iZpnZvgmBcWKei0ixcsUHbI\nUVny5cBzAgMBAAECggEAPAvUU9k2FD3dzshkvL4hvn9mobJWZ0I4PvbZxcNNFvqf\ncUNLfjDwbSGERQ/OghZlNbw8caSnb+WSmPgaHymIRJM2LesWzYJQZgc+2SNimkvJ\nCWJMaSshCEhJI5ddZ9W/pNjkVzngAA0ysMoHgt0Y6lW5OXj2BRpRICoOWtw96zOu\nwZfX34JZMMhBcq5J5wboAMtsCF4QKH5RY1p9KsqvFHmZVJyJRSpSvZMSJKCeUNNk\nutmXRHhC/OTLf+86okDJog87DspM7/Bz9mxihkGa4i55ek8Dzg8EMk9hYbU2pRZ2\nYQ2PgNsJTlT48ZPCmRVwOw0k2EKvfCPmmm+motMLMQKBgQDuPKCfp0pwfEb/Yfku\nr6tFgrN/ARZK+henh7HRYfqTVPvoXibRco13gtvtLOb7hflm9LX079VUA99rRxOB\nJSmB3Jf3U0C2+DPnABm+hS7cgFnqLD8ioBqs37J0WzMqilOo2BbUO9/9434tCE+4\nSUpdlFwyd/s7s0MNf2aKoye/ywKBgQDltNQQESGrRUtfmJzbc9Rpaxwrp3grRcqX\nVg4brGSK16JQ46MtFWtcBkThlfUcmXaCGkZZrpkT/7vhRlbPZAnt/Y4ommo0xZgo\nfqmTkRk3MKdHWCJhAycJ5YgevaHhGkp5zbbNfKt1UxWt463sT/pdwsEgzvIRFXbk\nyA73DIYc+QKBgHon1CSI3v52euEQF3j80lE+B1Oj9w5S1jYsudym5JkPBmvLexQC\nLM+O5b3jPDzUIWHNME97emMt6S1UsIeTyoiv16wVoCUxd0uHHaw3FiQyG+ia73SN\nq5/gw9wttzqk2ujEhFAms1+3ekcU7+uKiPsay3uFUej2rfcJ0EZeCk+pAoGAaM9E\nf3xBn5NDm//Xem50ehFMTkLgmuYCVWEHmOrlCVDwl/X2C2kdjmSx4zh4Ga+QGjcA\n6IS5Bh4GzPg6PfDIcxXhWndyhFewYLHCkDmBhuQlP3FgZmF425QmstgV188WMlOB\n2GrNFQBvAOPFBPFNLKDjXCPw4YiosiTyZxkIzIkCgYBDJnstOGp3wzcNPDNH3WcS\nj0WMqQaubB416DK5V4YIYLavGmeaNBewjNbRdJEj8nMLJ8Yr6qG1CDTLbxrNtBIW\ntT0g0RSVbbpCvM2fg/SKJvQ2+MmD8We5Tk6XHSYGtViDoLoTBTuetXPpKHgxlk1Z\nNhNM8R+00mS4oWcvy1YPSg==\n-----END PRIVATE KEY-----\n",
-  // "client_email": "nus-913@nus-chat-app.iam.gserviceaccount.com",
-  // "client_id": "111113643536325721738",
-  // "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  // "token_uri": "https://oauth2.googleapis.com/token",
-  // "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  // "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/nus-913%40nus-chat-app.iam.gserviceaccount.com",
-  // "universe_domain": "googleapis.com"
-}
+{}
