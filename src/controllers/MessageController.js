@@ -13,7 +13,7 @@ class MessageController {
             if (!to || !message) {
                 return res.json({
                     error: true,
-                    errorMessage: "Dados invalidos"
+                    errorMessage: "Invalid data"
                 })
             }
             const from = req._id;

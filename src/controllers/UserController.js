@@ -20,7 +20,7 @@ class UserController {
             if (!name || !username || !password) {
                 return res.json({
                     error: true,
-                    errorMessage: "Campos invalidos.",
+                    errorMessage: "Invalid fields.",
                 })
             }
             const user = {
@@ -32,7 +32,7 @@ class UserController {
             if (userExists) {
                 return res.json({
                     error: true,
-                    errorMessage: "Nome de usuario ja cadastrado",
+                    errorMessage: "Username already registered",
                 })
             }
             await UserRepository.create(user);
@@ -47,7 +47,7 @@ class UserController {
         } catch (err) {
             return res.json({
                 error: true,
-                errorMessage: "Ocorreu um erro. Tente novamente.",
+                errorMessage: "An error occurred. Please try again.",
                 err
             })
         }
@@ -57,14 +57,14 @@ class UserController {
         try {
             const { username, password } = req.body;
             if (!username || !password) {
-                return res.json({ error: true, errorMessage: "Campos invalidos." })
+                return res.json({ error: true, errorMessage: "Invalid fields." })
             }
             const user = await UserRepository.findByUsername(username);
             if (!user){
-                return res.json({ error: true, errorMessage: "Usuário ou senha inválidos" });
+                return res.json({ error: true, errorMessage: "Invalid username or password" });
             }
             if (!await bcrypt.compare(password, user.password)){
-                return res.json({ error: true, errorMessage: "Usuário ou senha inválidos" });
+                return res.json({ error: true, errorMessage: "Invalid username or password" });
             }
             const token = generateJwtToken(user);
             user.password = undefined;
