@@ -1,7 +1,7 @@
 const admin = require('firebase-admin');
 
-// Replace with the path to your service account JSON file
-const serviceAccount = require('./nus-chat-app-397c80246499.json');
+// Replace with the pat{}
+const serviceAccount = rocess.env.Service_Account;
 
 try{
   admin.initializeApp({
