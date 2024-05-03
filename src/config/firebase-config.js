@@ -1,7 +1,7 @@
 const admin = require('firebase-admin');
 
 // Replace with the pat{}
-const serviceAccount = rocess.env.Service_Account;
+const serviceAccount = process.env.Service_Account;
 
 try{
   admin.initializeApp({
