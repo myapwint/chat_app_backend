@@ -4,7 +4,6 @@ const router = express.Router();
 const UserController = require('./controllers/UserController');
 const MessageController = require('./controllers/MessageController');
 
-const FCMPushController = require('./controllers/FCMPushController');
 
 const userMiddleware = require('./middlewares/auths/user');
 
@@ -30,6 +29,5 @@ router.delete('/message/:id', [middlewares.user], MessageController.delete);
 
 router.post('/fcm-token', [middlewares.user], UserController.saveFcmToken);
 
-router.post('/fcmTest', FCMPushController.sendNotification);
 
 module.exports = router;
